@@ -9,5 +9,11 @@ jobs:
       - name: echo a string
         run: echo "Hello Umut"
       - name: multiline script
-        run: node -v
+        run: |
           npm -v
+          node -v
+      - name: python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
