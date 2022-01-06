@@ -13,3 +13,7 @@ jobs:
           who-to-greet: Umut
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
+      - name: List Files After Checkout
+        run: |
+          pwd
+          ls -a
